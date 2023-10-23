@@ -1,0 +1,93 @@
+@media screen and (max-width: 1024px) {
+  .pc-only {
+    display: none !important;
+  }
+
+  .t-only {
+    display: block !important;
+  }
+
+  .m-only {
+    display: none !important;
+  }
+
+  .t-0 {
+    display: none !important;
+  }
+}
+
+@media screen and (max-width: 740px) {
+  .pc-only {
+    display: none !important;
+  }
+
+  .t-only {
+    display: none !important;
+  }
+
+  .m-only {
+    display: block !important;
+  }
+
+  .m-0 {
+    display: none !important;
+  }
+
+  #header .search-button {
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: var(--header-height);
+    display: inline-block;
+  }
+
+  #nav {
+    position: absolute;
+    flex-direction: column;
+    width: 100%;
+    background-color: black;
+  }
+
+  #nav li:hover a {
+    color: white;
+    background-color: transparent;
+  }
+
+  #nav li a {
+    cursor: pointer;
+    width: 100%;
+    display: inline-block;
+  }
+
+  #nav:not(:first-child) {
+    display: none;
+  }
+
+  #nav li:not([class*="subnav"]):not(:first-child)  {
+    display: none !important;
+  }
+
+  .col-half,
+  .col-third {
+    flex-direction: column;
+  }
+
+  .col-third .member-img {
+    width: 60%;
+  }
+
+  #buy-ticket-modal {
+    left: 1%;
+    right: 1%;
+  }
+
+  .contact-form {
+    margin-top: 16px;
+  }
+
+  #contact .contact-form .col-half {
+    gap: 8px;
+  }
+
+}
